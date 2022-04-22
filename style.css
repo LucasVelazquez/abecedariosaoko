@@ -1,0 +1,150 @@
+@font-face {
+  font-family: "child-font";
+  src: url("./src/font/LapsusPro-Bold.otf");
+}
+
+body {
+  background-color: #91130f;
+}
+
+#loading {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: #91130f;
+  top: 0;
+  left: 0;
+  z-index: 15;
+}
+
+#loading-text {
+  font-size: 30px;
+  text-align: center;
+  font-family: "child-font";
+  color: #ffc9a6;
+}
+
+#letters-container {
+  width: 50%;
+  margin: 0 auto;
+}
+
+#header {
+  position: relative;
+}
+
+#content {
+  text-align: center;
+  font-family: "child-font";
+  color: #ffc9a6;
+}
+
+#image {
+  width: 12%;
+  cursor: pointer;
+  border-radius: 50%;
+  margin-top: 20px;
+}
+
+#title {
+  font-size: 35px;
+  margin: 17px 0;
+}
+
+#subtitle {
+  font-size: 16px;
+}
+
+.letter {
+  font-family: "child-font";
+  font-size: 130px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  margin: 7px;
+}
+
+.letter:hover {
+  transform: translateY(-8px);
+}
+
+#cafecito-button {
+  display: inline-block;
+  background-color: #02a59a;
+  color: white;
+  padding: 0.4rem 0.4rem;
+  text-decoration: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border-radius: 5px;
+}
+
+#cafecito-button img {
+  height: 32px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#cafecito-button span {
+  margin-left: 3px;
+  font-size: 13px;
+}
+
+#link {
+  position: absolute;
+  right: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #ffc9a6;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+#link > a {
+  color: #a1c002;
+}
+
+@media only screen and (max-width: 600px) {
+  #image {
+    width: 30%;
+  }
+
+  #title {
+    font-size: 25px;
+  }
+
+  .letter {
+    font-size: 50px;
+  }
+
+  .letter:hover {
+    transform: none;
+  }
+
+  #letters-container {
+    width: 80%;
+  }
+
+  #header {
+    text-align: center;
+  }
+
+  #link {
+    position: revert;
+    display: block;
+  }
+}
+
+.red {
+  color: #f44d5e;
+}
+
+.blue {
+  color: #4e8bfe;
+}
+
+.green {
+  color: #a1c002;
+}
+
+.yellow {
+  color: #f6d401;
+}
